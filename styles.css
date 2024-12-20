@@ -61,6 +61,8 @@ body {
 .banner-content {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
 }
 
 .banner h1 {
@@ -70,11 +72,20 @@ body {
     animation: fadeInDown 1s ease-out;
     font-weight: 700;
     letter-spacing: 2px;
+    padding-top: 35px;
 }
 
 .hours {
-    font-size: 1.5em;
-    margin-bottom: 30px;
+    background: rgba(255, 99, 71, 0.9);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 2em;
+    font-weight: 500;
+    border: 1px solid rgba(255,255,255,0.3);
+    text-shadow: none;
+    animation: fadeInDown 0.5s ease-out;
+    
 }
 
 .features {
@@ -82,7 +93,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 60px;
     position: relative;
     z-index: 1;
 }
@@ -259,7 +270,7 @@ h2::after {
     max-width: calc(25% - 30px);
     min-width: 250px;
     background: white;
-    padding: 50px 30px;
+    padding: 25px;
     border-radius: 15px;
     box-shadow: var(--card-shadow);
     transition: all 0.3s ease;
@@ -311,11 +322,13 @@ h2::after {
 .advantage-item p {
     color: #666;
     line-height: 1.8;
-    height: 90px;
+    height: 130px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
+    line-clamp: 4;
     -webkit-box-orient: vertical;
+    box-orient: vertical;
     margin-bottom: 0;
 }
 
@@ -949,5 +962,44 @@ h2::after {
     
     .logo {
         height: 40px;
+    }
+}
+
+/* 添加新的动画 */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2em;
+    }
+    
+    .hours {
+        font-size: 0.9em;
+        padding: 4px 12px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 1.6em;
+    }
+    
+    .hours {
+        font-size: 0.8em;
+        padding: 3px 10px;
+        margin-left: 8px;
+        margin-top: 10px;
+        display: inline-block;
     }
 }

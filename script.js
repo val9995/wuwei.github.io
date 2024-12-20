@@ -9,8 +9,8 @@ const closeBtn = document.querySelector('.close-btn');
 const qrCodes = {
     purchase: {
         title: '扫码购买课程',
-        image: './wechat-qr.jpg', // 购买二维码图片路径
-        desc: '请扫描二维码，添加客服微信进行购买'
+        image: './wechat-qr.jpg', // 购买二维码图片路径，请在课程上线后替换为实际的二维码图片路径
+        desc: '请扫描二维码，在线报名缴费'
     },
     consult: {
         title: '扫码咨询详情',
