@@ -415,6 +415,7 @@ h2::after {
     color: #666;
     font-size: 1.1em;
     line-height: 1.6;
+    font-weight: 600;
 }
 
 .contact-desc {
@@ -664,6 +665,7 @@ h2::after {
 }
 
 .tab-btn {
+    font-size: 1.1em;
     padding: 12px 25px;
     border: none;
     border-radius: 25px;
@@ -672,7 +674,7 @@ h2::after {
     cursor: pointer;
     transition: all 0.3s ease;
     border: 1px solid rgba(255,255,255,0.3);
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .tab-btn.active {
